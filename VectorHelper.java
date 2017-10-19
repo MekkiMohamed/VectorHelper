@@ -11,4 +11,17 @@ public class VectorHelper {
         return tab;
     }
 
+    public void fonction(int[] vec, char op,int val){
+        if (char == '+'){
+            for (int i=0;i<vec.length;i++) vec[i]+=val;
+        }else if (char == '-'){
+            for (int i=0;i<vec.length;i++) vec[i]-=val;
+
+        }else if (char == '*'){
+            for (int i=0;i<vec.length;i++) vec[i]*=val;
+        }else if (char == '/'){
+            for (int i=0;i<vec.length;i++) vec[i]/=val;
+        }
+
+    }
 }
