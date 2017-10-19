@@ -24,6 +24,14 @@ public class VectorHelper {
         }
     }
 
+    public void vectMinMax(int[] vecteur, int min, int max){
+        min=vecteur[0];
+        max=vecteur[0];
 
+        for(int i=0 ; i<vecteur.length ; i++){
+            if (min > vecteur[i]) min=vecteur[i];
+            if (max < vecteur[i]) max=vecteur[i];
+        }
+    }
 
 }
