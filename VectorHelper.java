@@ -1,7 +1,4 @@
 
-import kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager;
-
-
 public class VectorHelper {
 
     public static int[]  somme(int[] vec1,int[] vec2)throws Exception{
