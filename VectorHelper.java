@@ -2,7 +2,7 @@ public class VectorHelper {
 
 
 
-    public void trie(int[] vecteur){
+    public static void trie(int[] vecteur){
         int n;
         for(int i=0 ; i<vecteur.length ; i++){
             for(int j=i+1 ; j<vecteur.length ; i++){
@@ -15,7 +15,7 @@ public class VectorHelper {
         }
     }
 
-    public void invers(int[] vecteur){
+    public static void invers(int[] vecteur){
         int n;
         for(int i=0 ; i<vecteur.length/2 ; i++){
             n=vecteur[i];
@@ -24,7 +24,7 @@ public class VectorHelper {
         }
     }
 
-    public void vectMinMax(int[] vecteur, int min, int max){
+    public static void vectMinMax(int[] vecteur, int min, int max){
         min=vecteur[0];
         max=vecteur[0];
 
