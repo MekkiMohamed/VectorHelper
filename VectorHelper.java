@@ -92,18 +92,16 @@ public class VectorHelper {
      * Retourne le minimum et le maximum d'un vecteur.
      * @param vecteur
      *          le vecteur dans lequel on cherche le min et le max.
-     * @param min
-     *          la variable qui contiendra le minimum du vecteur.
-     * @param max
-     *          la variable qui contiendra le maximum du vecteur.
+     * @param min_max
+     *          un vecteur de deux éléments qui contiendra le minimum dans la premiére case (min_max[0]) et le maximum dans la deuxiéme case (min_max[1]).
      */
-    public static void vectMinMax(int[] vecteur, int min, int max){
-        min=vecteur[0];
-        max=vecteur[0];
+    public static void vectMinMax(int[] vecteur, int[] min_max){
+        min_max[0]=vecteur[0];
+        min_max[1]=vecteur[0];
 
         for(int i=0 ; i<vecteur.length ; i++){
-            if (min > vecteur[i]) min=vecteur[i];
-            if (max < vecteur[i]) max=vecteur[i];
+            if (min_max[0] > vecteur[i]) min_max[0]=vecteur[i];
+            if (min_max[1] < vecteur[i]) min_max[1]=vecteur[i];
         }
     }
 

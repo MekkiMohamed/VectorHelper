@@ -81,13 +81,13 @@ public class VectorHelperTest {
     @org.junit.Test
     public void vectMinMax() throws Exception {
         int[] vec=new int[3];
-        vec[0]=5;
-        vec[1]=2;
-        vec[2]=50;
-        int max=0,min=0;
-        VectorHelper.vectMinMax(vec,min,max);
-        assertTrue("false maximum max="+max,max==0);
-        assertTrue("false minimum",min==0);
+        vec[0]=22;
+        vec[1]=0;
+        vec[2]=21;
+        int[] min_max={0,0};
+        VectorHelper.vectMinMax(vec,min_max);
+        assertTrue("false maximum",min_max[1]==22);
+        assertTrue("false minimum",min_max[0]==0);
 
     }
 
