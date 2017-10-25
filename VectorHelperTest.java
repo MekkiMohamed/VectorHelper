@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class VectorHelperTest {
@@ -19,6 +21,25 @@ public class VectorHelperTest {
         }
 
         assertTrue("somme incorecte",vrai);
+    }
+
+    @Test(expected = VectorException.class)
+    public void testSommeVecteurLongueurDiff() throws Exception {
+        int[] vec1=new int[5];
+        int[] vec2=new int[10];
+        int[] vec3=new int[10];
+
+        for (int i=0;i<vec1.length;i++){
+            vec1[i]=i;
+            vec2[i]=10-i;
+        }
+        vec3=VectorHelper.somme(vec1,vec2);
+
+        boolean vrai=true;
+        for (int i=0;i<vec1.length;i++){
+            if (vec3[i]!=10) vrai=false;
+        }
+        fail();
     }
 
     @org.junit.Test
