@@ -19,8 +19,6 @@ public class VectorHelper {
 
         }else if (op == '*'){
             for (int i=0;i<vec.length;i++) vec[i]*=val;
-        }else if (op == '/'){
-            for (int i=0;i<vec.length;i++) vec[i]/=val;
         }
     }
 
@@ -28,7 +26,7 @@ public class VectorHelper {
     public static void trie(int[] vecteur){
         int n;
         for(int i=0 ; i<vecteur.length ; i++){
-            for(int j=i+1 ; j<vecteur.length ; i++){
+            for(int j=i+1 ; j<vecteur.length ; j++){
                 if(vecteur[i]>vecteur[j]) {
                     n=vecteur[i];
                     vecteur[i]=vecteur[j];
