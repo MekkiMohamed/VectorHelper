@@ -35,10 +35,6 @@ public class VectorHelperTest {
         }
         vec3=VectorHelper.somme(vec1,vec2);
 
-        boolean vrai=true;
-        for (int i=0;i<vec1.length;i++){
-            if (vec3[i]!=10) vrai=false;
-        }
         fail();
     }
 
